@@ -164,21 +164,22 @@ public class Program
         {
             Console.WriteLine("\n");
             Console.WriteLine("O que deseja fazer agora?");
+            Console.WriteLine("(a) assistir filme; (b) ouvir música; (c) desligar o sistema.");
             string resposta = Console.ReadLine();
 
-            if (resposta == "assistir filme")
+            if (resposta == "a")
             {
                 Console.WriteLine("Digite o nome do filme:");
                 string filme = Console.ReadLine();
                 cinema.AssistirFilme(filme);
             }
-            else if (resposta == "ouvir música")
+            else if (resposta == "b")
             {
                 Console.WriteLine("Digite o nome da música:");
                 string musica = Console.ReadLine();
                 cinema.OuvirMusica(musica);
             }
-            else if (resposta == "desligar tudo")
+            else if (resposta == "c")
             {
                 cinema.DesligarTudo();
                 break;
