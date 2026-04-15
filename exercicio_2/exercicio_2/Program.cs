@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Runtime.Versioning;
 
 // 1. criação dos objetos do sistema home theater
 public class TV
@@ -53,9 +52,9 @@ public class PlayerMidia
     {
         Console.WriteLine("Player de Mídia: Desligado.");
     }   
-    public void Reproduzir()
+    public void Reproduzir(string conteudo)
     {
-        Console.WriteLine("Player de Mídia: Reproduzindo conteúdo.");
+        Console.WriteLine($"Player de Mídia: Reproduzindo {conteudo}.");
     }
 }
 public class SistemaSom
@@ -108,7 +107,7 @@ public class HomeTheaterFacade
     }
 
     //operação AssistirFilme()
-    public void AssistirFilme()
+    public void AssistirFilme(string filme)
     {
         Console.WriteLine("Preparando ambiente para assistir filme.");
         luz.Escurecer();
@@ -117,11 +116,11 @@ public class HomeTheaterFacade
         receiver.ModoSurround();
         som.Ligar();
         player.Ligar();
-        player.Reproduzir();
+        player.Reproduzir(filme);
     }
 
     //operação OuvirMusica()
-    public void OuvirMusica()
+    public void OuvirMusica(string musica)
     {
         Console.WriteLine("Preparando ambiente para ouvir música");
         luz.Ligar();
@@ -129,7 +128,7 @@ public class HomeTheaterFacade
         receiver.Ligar();
         receiver.ModoStereo();
         player.Ligar();
-        player.Reproduzir();
+        player.Reproduzir(musica);
     }
 
     //desligamento
@@ -144,3 +143,15 @@ public class HomeTheaterFacade
         player.Desligar();
     }
 } 
+
+// 3.classe cliente: comandos simples mascaram ações complexas que acontecem por trás da fachada
+public class Program
+{
+    public static void Main()
+    {
+        HomeTheaterFacade cinema = new HomeTheaterFacade();
+        cinema.AssistirFilme("Divertidamente");
+        cinema.OuvirMusica("When I was your man - Bruno Mars");
+        cinema.DesligarTudo();
+    }
+}
