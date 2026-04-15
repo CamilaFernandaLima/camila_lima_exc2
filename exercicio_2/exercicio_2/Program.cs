@@ -109,7 +109,7 @@ public class HomeTheaterFacade
     //operação AssistirFilme()
     public void AssistirFilme(string filme)
     {
-        Console.WriteLine("Preparando ambiente para assistir filme.");
+        Console.WriteLine("Preparando ambiente para assistir filme:");
         luz.Escurecer();
         projetor.Ligar();
         receiver.Ligar();
@@ -122,7 +122,7 @@ public class HomeTheaterFacade
     //operação OuvirMusica()
     public void OuvirMusica(string musica)
     {
-        Console.WriteLine("Preparando ambiente para ouvir música");
+        Console.WriteLine("Preparando ambiente para ouvir música:");
         luz.Ligar();
         tv.Ligar();
         receiver.Ligar();
@@ -134,7 +134,7 @@ public class HomeTheaterFacade
     //desligamento
     public void DesligarTudo()
     {
-        Console.WriteLine("Desligando todos os dispositivos.");
+        Console.WriteLine("Desligando todos os dispositivos:");
         luz.Desligar();
         tv.Desligar();
         projetor.Desligar();
@@ -149,9 +149,46 @@ public class Program
 {
     public static void Main()
     {
+        // interação simulada com o usuário
         HomeTheaterFacade cinema = new HomeTheaterFacade();
         cinema.AssistirFilme("Divertidamente");
+        Console.WriteLine("\n");
+
         cinema.OuvirMusica("When I was your man - Bruno Mars");
+        Console.WriteLine("\n");
+
         cinema.DesligarTudo();
+
+        // interação simples com o usuário
+        while (true)
+        {
+            Console.WriteLine("\n");
+            Console.WriteLine("O que deseja fazer agora?");
+            string resposta = Console.ReadLine();
+
+            if (resposta == "assistir filme")
+            {
+                Console.WriteLine("Digite o nome do filme:");
+                string filme = Console.ReadLine();
+                cinema.AssistirFilme(filme);
+            }
+            else if (resposta == "ouvir música")
+            {
+                Console.WriteLine("Digite o nome da música:");
+                string musica = Console.ReadLine();
+                cinema.OuvirMusica(musica);
+            }
+            else if (resposta == "desligar tudo")
+            {
+                cinema.DesligarTudo();
+                break;
+            }
+            else
+            {
+                Console.WriteLine("Comando não reconhecido. Encerrando sistema.");
+                cinema.DesligarTudo();
+                break;
+            }
+        }
     }
 }

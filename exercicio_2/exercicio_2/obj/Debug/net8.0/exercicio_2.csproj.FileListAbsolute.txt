@@ -1,0 +1,15 @@
+C:\Users\camil\OneDrive\Meus Projetos\camila_lima_exc2\exercicio_2\exercicio_2\bin\Debug\net8.0\exercicio_2.exe
+C:\Users\camil\OneDrive\Meus Projetos\camila_lima_exc2\exercicio_2\exercicio_2\bin\Debug\net8.0\exercicio_2.deps.json
+C:\Users\camil\OneDrive\Meus Projetos\camila_lima_exc2\exercicio_2\exercicio_2\bin\Debug\net8.0\exercicio_2.runtimeconfig.json
+C:\Users\camil\OneDrive\Meus Projetos\camila_lima_exc2\exercicio_2\exercicio_2\bin\Debug\net8.0\exercicio_2.dll
+C:\Users\camil\OneDrive\Meus Projetos\camila_lima_exc2\exercicio_2\exercicio_2\bin\Debug\net8.0\exercicio_2.pdb
+C:\Users\camil\OneDrive\Meus Projetos\camila_lima_exc2\exercicio_2\exercicio_2\obj\Debug\net8.0\exercicio_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\camil\OneDrive\Meus Projetos\camila_lima_exc2\exercicio_2\exercicio_2\obj\Debug\net8.0\exercicio_2.AssemblyInfoInputs.cache
+C:\Users\camil\OneDrive\Meus Projetos\camila_lima_exc2\exercicio_2\exercicio_2\obj\Debug\net8.0\exercicio_2.AssemblyInfo.cs
+C:\Users\camil\OneDrive\Meus Projetos\camila_lima_exc2\exercicio_2\exercicio_2\obj\Debug\net8.0\exercicio_2.csproj.CoreCompileInputs.cache
+C:\Users\camil\OneDrive\Meus Projetos\camila_lima_exc2\exercicio_2\exercicio_2\obj\Debug\net8.0\exercicio_2.sourcelink.json
+C:\Users\camil\OneDrive\Meus Projetos\camila_lima_exc2\exercicio_2\exercicio_2\obj\Debug\net8.0\exercicio_2.dll
+C:\Users\camil\OneDrive\Meus Projetos\camila_lima_exc2\exercicio_2\exercicio_2\obj\Debug\net8.0\refint\exercicio_2.dll
+C:\Users\camil\OneDrive\Meus Projetos\camila_lima_exc2\exercicio_2\exercicio_2\obj\Debug\net8.0\exercicio_2.pdb
+C:\Users\camil\OneDrive\Meus Projetos\camila_lima_exc2\exercicio_2\exercicio_2\obj\Debug\net8.0\exercicio_2.genruntimeconfig.cache
+C:\Users\camil\OneDrive\Meus Projetos\camila_lima_exc2\exercicio_2\exercicio_2\obj\Debug\net8.0\ref\exercicio_2.dll
