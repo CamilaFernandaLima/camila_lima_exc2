@@ -11,4 +11,5 @@ Atualmente, o uso é complexo e pouco prático, pois o usuário precisa ligar e 
 - Demonstre redução de acoplamento com os subsistemas.
 
 *RESULTADO ESPERADO*
+
 "O cliente deve interagir apenas com a fachada, enquanto ela coordena os dispositivos internos e simplifica o uso do sistema."
